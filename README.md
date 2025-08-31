@@ -3,7 +3,7 @@
 A modern, responsive multi‑page Auction platform built with **Vite**, **vanilla ES Modules**, and **Tailwind CSS** consuming the **Noroff API v2 Auction House** endpoints. No front‑end frameworks (React/Vue/etc.) are used, complying with project technical restrictions.
 
 ## Deployment
-Live application: 
+Live application: https://semester-project-2-auctionhouse.vercel.app/
 
 ## Features
 - Public browsing & search of listings (keyword + tag filtering, active-only toggle, infinite scroll)
@@ -83,3 +83,4 @@ No custom env file is required for public Auction House endpoints. If an API key
 - Vite team
 
 ---
+
