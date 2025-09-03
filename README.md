@@ -3,7 +3,7 @@
 A modern, responsive multi‑page Auction platform built with **Vite**, **vanilla ES Modules**, and **Tailwind CSS** consuming the **Noroff API v2 Auction House** endpoints. No front‑end frameworks (React/Vue/etc.) are used, complying with project technical restrictions.
 
 ## Deployment
-Live application: https://semester-project-2-auctionhouse.vercel.app/
+Live application: 
 
 ## Features
 - Public browsing & search of listings (keyword + tag filtering, active-only toggle, infinite scroll)
@@ -28,8 +28,9 @@ Live application: https://semester-project-2-auctionhouse.vercel.app/
 
 ## Project Structure
 ```
-index.html
-login/ register/ listings/ user/dashboard/  (directory-based pages)
+index.html  (main listings browsing, search, filters, infinite scroll)
+login/ register/ user/dashboard/  (directory-based pages)
+listings/ (redirect stub + nested detail/create/edit routes)
 public/ favicon.svg vite.svg
 src/
   api/ (HTTP + endpoint wrappers)
@@ -54,7 +55,7 @@ npm install
 ```
 npm run dev
 ```
-Visit the printed local URL (usually http://localhost:5173/). Pages are accessible via clean trailing-slash paths, e.g. `/listings/`, `/login/`.
+Visit the printed local URL (usually http://localhost:5173/). The root path `/` now serves the listings page (formerly `/listings/`). Nested routes like `/listings/detail/?id=...`, `/listings/create/`, `/listings/edit/?id=...` remain under the `listings/` directory. Auth pages stay at `/login/` and `/register/`.
 
 ### Build
 ```
@@ -83,4 +84,3 @@ No custom env file is required for public Auction House endpoints. If an API key
 - Vite team
 
 ---
-

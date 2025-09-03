@@ -8,14 +8,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        home: resolve(__dirname, 'index.html'),
-        login: resolve(__dirname, 'login.html'),
-        register: resolve(__dirname, 'register.html'),
-        listings: resolve(__dirname, 'listings/index.html'),
-        listingDtl: resolve(__dirname, 'listings/detail.html'),
-        listingCreate: resolve(__dirname, 'listings/create.html'),
-        listingEdit: resolve(__dirname, 'listings/edit.html'),
-        dashboard: resolve(__dirname, 'user/dashboard.html'),
+        root: resolve(__dirname, 'index.html'),
+        login: resolve(__dirname, 'login/index.html'),
+        register: resolve(__dirname, 'register/index.html'),
+        listingDetail: resolve(__dirname, 'listings/detail/index.html'),
+        listingCreate: resolve(__dirname, 'listings/create/index.html'),
+        listingEdit: resolve(__dirname, 'listings/edit/index.html'),
+        dashboard: resolve(__dirname, 'user/dashboard/index.html'),
       },
     },
   },
